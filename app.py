@@ -33,4 +33,4 @@ def view_transactions():
     return render_template('view_transactions.html', tables = [df.to_html()], titles = df.columns.values)
                            
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(host="127.0.0.1", port=5001, debug=True)
